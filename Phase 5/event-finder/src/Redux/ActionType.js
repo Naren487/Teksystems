@@ -1,0 +1,7 @@
+export const MAKE_REQUEST='MAKE_REQUEST'
+export const FAIL_REQUEST='FAIL_REQUEST'
+export const GET_EVENT_LIST='GET_EVENT_LIST'
+export const DELETE_EVENT='DELETE_EVENT'
+export const ADD_EVENT='ADD_EVENT'
+export const UPDATE_USER='UPDATE_USER'
+export const GET_EVENT_OBJ='GET_EVENT_OBJ'

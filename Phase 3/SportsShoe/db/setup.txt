@@ -1,0 +1,98 @@
+
+
+
+Setting up tables in database
+
+database name is sportsshoe
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL
+);
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `password`, `username`) VALUES
+(1, 'admin', 'admin');
+
+
+
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `number` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `address`, `number`, `password`) VALUES
+(1, 'Narendra Kumar', '1-10-271,lane no4, Brahanwadi,Begumpet', '9896989698', 'Naren'),
+(2, 'Mahendhar', 'Home', '9696969696', 'Naren'),
+(3, 'Ramesh', 'Office', '9898989898', 'Naren');
+
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `category` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `category`, `description`, `image`, `name`, `price`) VALUES
+(17, 'Sports', 'Rough Use', '/images/static/imgs/1613659924-nike-zoomx-invin-1613659905.jpg', 'Campus', '3000'),
+(18, 'Sports', 'Rough Use', '/images/static/imgs/Nike.jpg', 'Nike', '4000'),
+(19, 'Casuel', 'Slimware', '/images/static/imgs/puma.jpg', 'Puma', '2900'),
+(21, 'Normal Were', 'Slimware', '/images/static/imgs/123.png', 'Campus 2.0', '6780'),
+(22, 'Normal Were', 'Slimeware', '/images/static/imgs/puma.jpg', 'Tupper', '3450');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `purchase_report_data`
+--
+
+CREATE TABLE `purchase_report_data` (
+  `id` int(11) NOT NULL,
+  `category` text DEFAULT NULL,
+  `date` text DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `product_name` text DEFAULT NULL,
+  `user_number` text DEFAULT NULL,
+  `username` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `purchase_report_data`
+--
+
+INSERT INTO `purchase_report_data` (`id`, `category`, `date`, `price`, `product_name`, `user_number`, `username`) VALUES
+(1, 'Normal Were', '2023/04/09', '2000', 'RedTape', '9696969696', 'Mahendhar'),
+(2, 'Casuel', '2023/04/09', '2900', 'Puma', '9966288487', 'Narendra Kumar'),
+(3, 'Normal Were', '2023/04/10', '2000', 'RedTape', '9966288487', 'Narendra Kumar'),
+(4, 'Sports', '2023/04/10', '3000', 'Campus', '9966288487', 'Narendra Kumar'),
+(5, 'Sports', '2023/04/10', '2000', 'RedTape 2.0', '9898989898', 'Ramesh');
+
+-- --------------------------------------------------------
