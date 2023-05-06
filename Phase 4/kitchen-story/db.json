@@ -1,0 +1,57 @@
+{
+  "admin": [
+    {
+      "username": "admin",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "name": "Amul Ghee",
+      "category": "Ghee",
+      "price": "550",
+      "image": "https://m.media-amazon.com/images/I/81jSZt5XnKL._SL1500_.jpg",
+      "quantity": "1L"
+    },
+    {
+      "id": 2,
+      "name": "Amul Cheese",
+      "category": "Cheese",
+      "price": "350",
+      "image": "https://www.jiomart.com/images/product/600x600/490001401/amul-cheese-block-200-g-carton-product-images-o490001401-p490001401-4-202204261856.jpg",
+      "quantity": "350g"
+    },
+    {
+      "name": "Full Cream Milk",
+      "category": "Milk",
+      "price": "32",
+      "quantity": "500ml",
+      "image": "https://th.bing.com/th/id/OIP.CBlL9pmmOtk0GmfsCdqSIQHaHL?pid=ImgDet&rs=1",
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "name": "Narendra",
+      "address": "1-10-271 Begumpet Hyderabad",
+      "phone": "9898989898",
+      "email": "naren.v@gmail.com",
+      "payment": "COD",
+      "item": "1",
+      "date": "2023-05-06",
+      "id": 1
+    },
+    {
+      "name": "Narendra",
+      "address": "Narendra",
+      "phone": "9898989898",
+      "email": "naren.v@gmail.com",
+      "payment": "Card",
+      "item": "1",
+      "date": "2023-05-06",
+      "id": 2
+    }
+  ]
+}

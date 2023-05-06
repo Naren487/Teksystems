@@ -102,7 +102,7 @@ export default function DataList() {
         //             <tr>
 
         //             <td>{t.id}</td>
-        //             <td>{t.name}</td>
+        //             <td id="name">{t.name}</td>
         //             <td>{t.image}</td>
         //             <td>{t.cp}</td>
         //             <td>{t.attack}</td>                    
